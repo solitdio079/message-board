@@ -1,0 +1,85 @@
+*{
+box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+navbar{
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 1px 1px 1px #ccc;
+    padding: 1rem;
+    margin: 1.5rem 0;
+}
+footer{
+    display: flex;
+    padding: .75rem;
+    justify-content: center;
+}
+.messages{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.card{
+    margin: 2rem;
+    border-radius: 10px;
+    padding: .75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 250px;
+    box-shadow: 1px 2px 1px #ccc;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+form input{
+    border-radius: 5px;
+    font-size: 1rem;
+    padding: .5rem;
+}
+
+form label{
+    display: flex;
+    flex-direction: column;
+}
+
+ul{
+    list-style: none;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+h1,h2{
+    margin: 1.75rem;
+}
+ul a {
+    text-decoration: none;
+    color: black;
+}
+
+form button, .btn {
+    background-color: #333;
+    font-size: 1rem;
+    padding: .5rem;
+    text-decoration: none;
+    color: antiquewhite;
+    border: none;
+    border-radius: 10px;
+}
+
+.details{
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+}

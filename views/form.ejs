@@ -1,0 +1,17 @@
+<%- include('navbar', {links}) %>
+
+<form method="POST" action="/new">
+     <h3>What's new?</h3>
+     <label>
+         Message 
+        <input name="messageText" type="text" required>
+     </label>
+     <label>
+        User name
+        <input name="messageUser" type="text" required>
+     </label>
+
+     <button>Send</button>
+</form>
+
+  <%- include('footer') %>

@@ -1,0 +1,21 @@
+
+    <%- include('navbar', {links}) %>
+    <h1>
+        <%= title %>
+    </h1>
+    <div class="messages">
+        <% messages.forEach(message=> { %>
+            <div class="card">
+                <small>
+                    <%= message.user %> | <%= message.added %>
+                </small>
+                <p>
+                    <%= message.text %>
+                </p>
+
+                <a class="btn" href="message/<%= message.id %>">Open</a>
+            </div>
+
+            <% }) %>
+    </div>
+    <%- include('footer') %>

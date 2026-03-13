@@ -1,0 +1,16 @@
+<%- include('navbar', {links}) %>
+    <h2>Message #<%= message.id %> details </h2>
+    <div class="details">
+
+        <p>
+            Author: <%= message.user %>
+        </p>
+        <p>
+            Content: <%= message.text %>
+        </p>
+        <p>
+            Date added: <%= message.added %>
+        </p>
+    </div>
+
+    <%- include('footer') %>
