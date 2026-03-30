@@ -7,10 +7,10 @@
         <% messages.forEach(message=> { %>
             <div class="card">
                 <small>
-                    <%= message.user %> | <%= message.added %>
+                    <%= message.username %> | <%= message.added %>
                 </small>
                 <p>
-                    <%= message.text %>
+                    <%= message.message_text %>
                 </p>
 
                 <a class="btn" href="message/<%= message.id %>">Open</a>
